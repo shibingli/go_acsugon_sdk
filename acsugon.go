@@ -27,8 +27,8 @@ type ACSugon struct {
 	Endpoint string                  `json:"endpoint"`
 	User     string                  `json:"user"`
 	Password string                  `json:"password"`
-	OrgID    string                  `json:"orgId,omitempty"`
-	Tokens   map[string]entity.Token `json:"tokens"`
+	OrgID    string                  `json:"orgId"`
+	Tokens   map[string]entity.Token `json:"tokens,omitempty"`
 
 	Client *http.Client `json:"-"`
 }
